@@ -1,0 +1,60 @@
+.u-fm-el,
+.u-fm-grp {
+  margin-bottom: $gridSpace;
+  border: 1px solid #9fa0a0;
+  color: #1e1e1e;
+}
+.u-fm-el:not([class*=u-rc]),
+.u-fm-grp:not([class*=u-rc]) {
+  border-radius: 2px;
+}
+.u-fm-el,
+.u-fm-grp-el,
+.u-fm-grp-add {
+  padding: 8px;
+}
+.u-fm-el {
+  display: block;
+}
+.u-fm-grp {
+  display: table;
+  overflow: hidden;
+  background-color: #fff;
+}
+.u-fm-gap {
+  width: 15px;
+}
+
+.u-fm-grp-el,  /*for input text*/
+.u-fm-grp-add,  /*for button or text*/
+.u-fm-grp-ico   /*for icon*/
+{
+  display: table-cell;
+}
+.u-fm-grp-el {
+  width: 100%;
+  border: none;
+  background: none;
+}
+.u-fm-grp-add,
+.u-fm-grp-ico {
+  width: 1%;
+  white-space: nowrap;
+}
+.u-fm-grp-add .u-btn {
+  padding: 10px 8px;
+  margin: -10px -8px;
+  vertical-align: initial;
+}
+.u-fm-grp-ico .u-ico {
+  width: 50px;
+  padding: 4px 0;
+}
+.u-fm-grp-add:first-child,
+.u-fm-grp-ico:first-child .u-ico {
+  border-right: 1px solid #9fa0a0;
+}
+.u-fm-grp-add:last-child,
+.u-fm-grp-ico:last-child .u-ico {
+  border-left: 1px solid #9fa0a0;
+}

@@ -1,0 +1,49 @@
+.m-lst:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+.m-lst .item {
+  float: left;
+  width: 23%;
+  margin: 1%;
+  border: 1px solid #9fa0a0;
+}
+.m-lst .ct { /*content*/
+  padding: 10px;
+}
+
+.m-lst-img {
+  padding-top: 50%;
+}
+.m-lst-tt {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+.m-lst-tt small {
+  vertical-align: bottom;
+}
+.m-lst-intro {
+  height: 72px;
+  overflow: hidden;
+}
+.m-lst-more {
+  margin-top: 10px;
+  font-size: 15px;
+}
+.m-lst-fm li {
+  position: relative;
+  min-height: 20px;
+  padding-left: 74px;
+  margin: 4px 0;
+  font-size: 14px;
+}
+.m-lst-fm li.oh { /*overflow hidden*/
+  height: 58px;
+  overflow: hidden;
+}
+.m-lst-fm .lab {
+  position: absolute;
+  left: 0;
+}

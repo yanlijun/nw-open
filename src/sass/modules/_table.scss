@@ -1,0 +1,45 @@
+.m-tb {
+  text-align: center;
+  border-right: 1px solid #cccaca;
+  border-bottom: 1px solid #cccaca;
+}
+.m-tb th,
+.m-tb td {
+  padding: 10px;
+  border-top: 1px solid #cccaca;
+  border-left: 1px solid #cccaca;
+}
+.m-tb .r-img { /*row*/
+  position: relative;
+  background: no-repeat center;
+  background-size: cover;
+}
+.m-tb [class|=rw] { /*row width*/
+  table-layout: fixed;
+}
+.m-tb .rw-xs {
+  width: 5%;
+}
+.m-tb .rw-s {
+  width: 10%;
+}
+.m-tb .rw-m {
+  width: 15%;
+}
+.m-tb .rw-l {
+  width: 20%;
+}
+.m-tb .rw-xl {
+  width: 25%;
+}
+.m-tb [class|=ro] { /*row operate*/
+  display: inline-block;
+  cursor: pointer;
+}
+.m-tb .ro-uld-edit {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 20px 5px 5px 20px;
+  @include background(linear-gradient(-45deg, #fff, #fff 50%, transparent 50%));
+}

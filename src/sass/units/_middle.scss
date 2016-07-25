@@ -1,0 +1,9 @@
+.u-mid {
+  display: table;
+  @extend %width-full;
+}
+.u-mid-ct { /*content*/
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}

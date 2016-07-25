@@ -1,0 +1,30 @@
+.m-tab-opt {
+  @extend %display-flex;
+  @include box-shadow(0 0 3px rgba(0, 0, 0, .3));
+}
+.m-tab-opt li {
+  @include flex(1 0);
+  border-right: 1px solid transparent;
+  &:last-child {
+    border-right: none;
+  }
+}
+.m-tab-opt a {
+  display: block;
+  padding: 10px 12px;
+  border-bottom: 1px solid transparent;
+  font-size: 16px;
+  text-align: center;
+  color: $black;
+}
+.m-tab-opt a:hover,
+.m-tab-opt li.sel a {
+  border-bottom-color: $blueLight;
+  color: $blueLight;
+}
+.m-tab-cnt>.item { /*container*/
+  display: none;
+}
+.m-tab-cnt>.item.sel {
+  display: block;
+}

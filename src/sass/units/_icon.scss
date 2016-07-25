@@ -1,0 +1,65 @@
+//@import "compass/utilities/sprites";
+.u-ico {
+  display: inline-block;
+  min-width: 24px;
+  text-indent: -9999px;
+  background: no-repeat center;
+  background-size: contain;
+}
+.u-ico-play {
+  border-width: 12px 0 12px 24px;
+  border-style: solid;
+  border-color: transparent #fff;
+}
+.u-ico-pause {
+  width: 24px;
+  height: 24px;
+  border-width: 0 7px;
+  border-style: solid;
+  border-color: #fff;
+}
+
+.u-ico-house {
+  background-image: url('../../images/icon-house.png');
+}
+.u-ico-phone {
+  background-image: url('../../images/icon-phone.png');
+}
+.u-ico-phone-so {
+  background-image: url('../../images/icon-phone-solid.png');
+}
+.u-ico-mail {
+  background-image: url('../../images/icon-mail.png');
+}
+.u-ico-mail-so {
+  background-image: url('../../images/icon-mail-solid.png');
+}
+.u-ico-wb-so {
+  background-image: url('../../images/icon-wb-solid.png');
+}
+.u-ico-wx-so {
+  background-image: url('../../images/icon-wx-solid.png');
+}
+
+.u-ico-search {
+  background-image: url('../../images/icon-search.png');
+}
+.u-ico-search:hover {
+  background-image: url('../../images/icon-search-hover.png');
+}
+.u-ico-head {
+  background-image: url('../../images/icon-head.png');
+}
+.u-ico-key {
+  background-image: url('../../images/icon-key.png');
+}
+
+.u-ico-alipay {
+  background-image: url('../../images/icon-alipay.jpg');
+}
+.u-ico-wechart {
+  background-image: url('../../images/icon-wechart.png');
+}
+.u-ico-unionpay {
+  background-image: url('../../images/icon-unionpay.jpg');
+}

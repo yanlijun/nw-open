@@ -1,0 +1,66 @@
+
+@mixin text-size-adjust {
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+* {
+  -webkit-tap-highlight-color: transparent;
+  @include box-sizing(border-box);
+}
+
+body {
+  font: 300 13px/1.4 Helvetica, 'Microsoft YaHei', sans-serif;
+  background-color: lighten($black, 72%); //$white;
+  color: $gray;
+  @include text-size-adjust;
+}
+h1, h2, h3, h4, h5, h6, label {
+  font-weight: normal;
+}
+small {
+  font-size: 68%;
+}
+a {
+  color: $grayDark;
+  text-decoration: none;
+  &:hover {
+    color: $black;
+  }
+}
+img, video {
+  vertical-align: middle;
+}
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  outline: none;
+  @include border-radius(0); //ios
+  @include appearance(none);
+}
+input[type=radio],
+input[type=checkbox] {
+  margin: 0;
+}
+input[type=radio] {
+  @include appearance(radio);
+}
+input[type=checkbox] {
+  @include appearance(checkbox);
+}
+select {
+  padding-right: 40px!important;
+  background: $white url('../../images/icon-select.png') no-repeat right center;
+  background-size: contain;
+}
+textarea {
+  resize: vertical;
+}
+html, body {
+  height: 100%;
+}

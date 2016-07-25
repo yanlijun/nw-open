@@ -1,0 +1,14 @@
+.u-rc-s,
+.u-rc-m,
+.u-rc-l {
+  overflow: hidden;
+}
+.u-rc-s {
+  @include border-radius(5px);
+}
+.u-rc-m {
+  @include border-radius(10px);
+}
+.u-rc-l {
+  @include border-radius(20px);
+}

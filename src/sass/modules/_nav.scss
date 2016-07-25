@@ -1,0 +1,31 @@
+.m-nav,
+.m-nav a {
+  color: #fff;
+}
+.m-nav {
+  font-size: 0;
+  text-align: center;
+}
+.m-nav a:hover {
+  color: #ccc;
+}
+.m-nav li {
+  display: inline;
+  font-size: 15px;
+}
+.m-nav li i {
+  font-style: normal;
+}
+.m-nav li a {
+  display: inline-block;
+  margin: 0 10px -2px;
+  padding: 12px 15px;
+  border-bottom: 2px solid transparent;
+}
+.m-nav li.sel a {
+  border-color: #4489ff;
+}
+.g-ft .m-nav a {
+  margin-bottom: 0;
+  border-bottom: none;
+}

@@ -1,0 +1,21 @@
+.u-tips {
+  margin: 15px 0;
+  font-size: 14px;
+}
+.u-tips strong {
+  font-size: 15px;
+}
+.u-tips a:not(.u-btn) {
+  text-decoration: underline;
+}
+.u-tips a:hover {
+  text-decoration: none;
+}
+
+.u-tips-err {
+  display: none;
+  color: #c83200;
+}
+.u-tips-err.show {
+  display: block;
+}

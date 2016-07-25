@@ -1,0 +1,31 @@
+.m-pnl-hd {
+  border-bottom: 1px solid #9fa0a0;
+}
+.m-pnl-hd:last-child {
+  border-bottom: none;
+}
+.m-pnl-bd,
+.m-pnl-ft,
+.m-pnl-tt {
+  padding: 10px;
+}
+.m-pnl-ft {
+  border-top: 1px solid #9fa0a0;
+}
+.m-pnl-ft:first-child {
+  border-top: none;
+}
+.m-pnl-tt {
+  margin: 0;
+  font-size: 18px;
+}
+.m-pnl-tt .u-ico {
+  width: 24px;
+  height: 22px;
+  margin-right: 6px;
+  vertical-align: bottom;
+}
+.m-pnl-sub {
+  padding: 6px;
+  font-size: 15px;
+}

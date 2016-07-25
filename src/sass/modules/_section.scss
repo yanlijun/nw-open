@@ -1,0 +1,53 @@
+.m-sec-img {
+  position: relative;
+  padding-top: 34%;
+}
+.m-sec-img .m-sec-ct {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.m-sec-img .u-mid {
+  height: 100%;
+}
+.m-sec-txt .m-sec-ct {
+  padding: 6% 0;
+}
+
+.m-sec-tt { /*title*/
+  font-size: 28px;
+}
+.m-sec-tt span {
+  padding-left: 6px;
+  font-size: 48px;
+  letter-spacing: 6px;
+}
+.m-sec-btt { /*big title*/
+  font-size: 38px;
+}
+.m-sec-btt span {
+  font-size: 58px;
+}
+.m-sec-stt { /*sub title*/
+  letter-spacing: 12px;
+}
+.m-sec-tt:not(:last-child),
+.m-sec-btt:not(:last-child),
+.m-sec-stt:not(:last-child) {
+  margin-bottom: 10px;
+}
+.m-sec-tag {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 3px 3px 3px 8px;
+  border: 1px solid;
+  letter-spacing: 5px;
+}
+.m-sec-lst {
+  font-size: 0;
+}
+.m-sec-lst li {
+  display: inline-block;
+}
