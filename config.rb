@@ -6,8 +6,8 @@ http_path = "/"
 css_dir = "src/css"
 sass_dir = "src/sass"
 images_dir = "images"
-javascripts_dir = "src/js"
-# fonts_dir = "fonts"
+# javascripts_dir = "src/js"
+# fonts_dir = "src/fonts"
 
 
 cache = false

@@ -1,5 +1,5 @@
 %display-flex {
-  display: inline-block; //non-flexbox browsers
+  display: inline-block; /*non-flexbox browsers*/
   @include display-flex;
 }
 %grid-min-width {

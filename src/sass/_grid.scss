@@ -33,7 +33,8 @@
   }
 }
 
-.g-col { //columns
+/*columns*/
+.g-col {
   @extend %display-flex;
   &-cell {
     @include flex(1);
