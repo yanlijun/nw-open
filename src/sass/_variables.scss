@@ -1,10 +1,10 @@
 // color
 $white: #fff;
-$black: #333;
+$black: #363636;
 $grayDark: #666;
 $gray: #999;
 $grayLight: #ccc;
-$red: #c83200;
+$red: #e5493a;
 $redLight: #d4471b;
 $orange: #ff7d00;
 $orangeLight: #f78e10;
@@ -15,6 +15,11 @@ $yellowLight: #e89d0f;
 $blueDark: #1b1e6b;
 $blue: #3b42e3;
 $blueLight: #0099cc;
+
+$bgColor: lighten($black, 76%);
 // space
 $gridSpace: 15px;
 $contextSpace: 10px;
+
+// others
+$cornerWidth: 24px;

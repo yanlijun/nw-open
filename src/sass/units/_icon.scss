@@ -2,10 +2,6 @@
 
 .u-ico {
   display: inline-block;
-  min-width: 24px;
-  text-indent: -9999px;
-  background-position: center;
-  background-size: contain;
 }
 .u-ico-play {
   border-width: 12px 0 12px 24px;
@@ -22,6 +18,7 @@
 
 $u-ico-spacing: 25px;
 $u-ico-position: 50%;
+$u-ico-sprite-dimensions: ture;
 @import "u-ico/*.png";
 @include all-u-ico-sprites;
 

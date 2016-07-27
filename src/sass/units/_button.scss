@@ -4,6 +4,9 @@
   vertical-align: middle;
   cursor: pointer;
 }
+.u-btn + .u-btn {
+  //margin-left: 20px;
+}
 .u-btn:hover {
   text-decoration: none;
 }
@@ -19,6 +22,11 @@
   padding: 8px 20px;
   font-size: 18px;
   letter-spacing: 1px;
+}
+.u-btn-xl {
+  padding: 12px 28px;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 .u-btn-welt {
   position: absolute;

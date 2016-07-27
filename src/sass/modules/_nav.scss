@@ -1,13 +1,13 @@
 .m-nav,
 .m-nav a {
-  color: #fff;
+  color: $black;
 }
 .m-nav {
   font-size: 0;
   text-align: center;
 }
 .m-nav a:hover {
-  color: #ccc;
+  color: $redLight;
 }
 .m-nav li {
   display: inline;
@@ -18,14 +18,18 @@
 }
 .m-nav li a {
   display: inline-block;
-  margin: 0 10px -2px;
-  padding: 12px 15px;
+  margin: 0 10px 4px;
+  padding: 12px 15px 6px;
   border-bottom: 2px solid transparent;
 }
 .m-nav li.sel a {
-  border-color: #4489ff;
+  border-color: $redLight;
+  color: $redLight;
 }
 .g-ft .m-nav a {
-  margin-bottom: 0;
-  border-bottom: none;
+  color: $white;
+
+  &:hover {
+    color: $redLight;
+  }
 }
