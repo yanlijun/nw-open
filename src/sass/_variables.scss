@@ -16,7 +16,11 @@ $blueDark: #1b1e6b;
 $blue: #3b42e3;
 $blueLight: #0099cc;
 
-$bgColor: lighten($black, 76%);
+//grayUltraLight
+$grayUltraLight: lighten($black, 76%);
+// base
+$baseFontSize: 13px;
+$baseLineHeight: 1.4;
 // space
 $gridSpace: 15px;
 $contextSpace: 10px;

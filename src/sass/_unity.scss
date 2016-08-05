@@ -10,8 +10,11 @@
 }
 
 body {
-  font: 300 13px/1.4 Helvetica, 'Microsoft YaHei', sans-serif;
-  background-color: $bgColor; //$white;
+  font-weight: 300;
+  font-size: $baseFontSize;
+  font-family: Helvetica, 'Microsoft YaHei', sans-serif;
+  line-height: $baseLineHeight;
+  background-color: $white;
   color: $gray;
   @include text-size-adjust;
 }

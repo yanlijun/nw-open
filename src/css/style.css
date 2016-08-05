@@ -64,8 +64,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 body {
-  font: 300 13px/1.4 Helvetica, 'Microsoft YaHei', sans-serif;
-  background-color: #f8f8f8;
+  font-weight: 300;
+  font-size: 13px;
+  font-family: Helvetica, 'Microsoft YaHei', sans-serif;
+  line-height: 1.4;
+  background-color: #fff;
   color: #999;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -264,6 +267,9 @@ html, body {
   margin-left: -15px;
   margin-right: -15px;
 }
+.g-mn.ct {
+  padding: 45px;
+}
 
 /*columns*/
 .g-col-cell {
@@ -318,8 +324,8 @@ html, body {
 
 .m-nav li a {
   display: inline-block;
-  margin: 0 10px 4px;
-  padding: 12px 15px 6px;
+  margin: 0 10px 6px;
+  padding: 12px 15px 4px;
   border-bottom: 2px solid transparent;
 }
 
@@ -431,6 +437,42 @@ html, body {
     min-width: 480px;
   }
 }
+/********* Tab *********/
+.m-tab-opt li {
+  display: inline-block;
+  margin-right: 30px;
+}
+.m-tab-opt a {
+  font-size: 22px;
+  color: #363636;
+}
+.m-tab-opt a:hover, .m-tab-opt li.sel a {
+  color: #d4471b;
+}
+.m-tab-cnt > .item {
+  /*container*/
+  display: none;
+  padding: 15px 0;
+}
+.m-tab-cnt > .item.sel {
+  display: block;
+}
+.m-tab-cnt > .item > ul > li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.m-tab-cnt > .item > ul > li.main {
+  padding: 60px;
+}
+.m-tab-cnt > .item > ul > li.main img {
+  max-width: 100%;
+}
+.m-tab-cnt > .item > ul > li .m-fd {
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
 /********* Panel *********/
 .m-pnl-hd, .m-pnl-bd, .m-pnl-ft {
   padding: 15px;
@@ -472,7 +514,7 @@ html, body {
   min-width: 288px;
   max-width: 480px;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .m-dlg-ct .m-pnl-hd {
   background-color: rgba(255, 255, 255, 0.75);
@@ -519,6 +561,64 @@ html, body {
 .m-lst.row-items .item-ct.u-center {
   -webkit-align-items: flex-start;
   align-items: flex-start;
+}
+
+/********* Table *********/
+.m-tb {
+  border-right: 1px solid #cccaca;
+  border-bottom: 1px solid #cccaca;
+}
+.m-tb th, .m-tb td {
+  padding: 10px;
+  border-top: 1px solid #cccaca;
+  border-left: 1px solid #cccaca;
+}
+.m-tb .rw-xs {
+  /*row*/
+  width: 5%;
+}
+.m-tb .rw-s {
+  width: 10%;
+}
+.m-tb .rw-m {
+  width: 15%;
+}
+.m-tb .rw-l {
+  width: 20%;
+}
+.m-tb .rw-xl {
+  width: 25%;
+}
+
+/********* Field Horizontal *********/
+.m-fd {
+  /*field*/
+  margin-bottom: 15px;
+}
+.m-fd:last-child {
+  margin-bottom: 0;
+}
+.m-fd li {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 18%;
+  min-height: 28.2px;
+}
+.m-fd li label {
+  position: absolute;
+  left: 0;
+  width: 16%;
+  text-align: right;
+}
+.m-fd-tt {
+  margin-bottom: 10px;
+  padding-left: 0 !important;
+  font-size: 18px;
+}
+.m-fd-tt.ws {
+  /*WideScreen*/
+  padding-left: 8% !important;
 }
 
 /************************** Units **************************/
@@ -975,15 +1075,15 @@ html, body {
 }
 
 .f-tal {
-  text-align: left;
+  text-align: left !important;
 }
 
 .f-tac {
-  text-align: center;
+  text-align: center !important;
 }
 
 .f-tar {
-  text-align: right;
+  text-align: right !important;
 }
 
 .f-wwb {
@@ -1127,6 +1227,11 @@ a.s-fc-db:hover,
   background-color: #ccc;
 }
 
+.s-bgc-ulg {
+  /*ultra light gray*/
+  background-color: #f8f8f8;
+}
+
 .s-bgc-r {
   background-color: #e5493a;
 }
@@ -1262,5 +1367,14 @@ a.s-bgc-db:hover,
 }
 
 /************************** custom **************************/
+/*ADK Download*/
+.m-tb-dl {
+  /*download*/
+  margin-bottom: 45px;
+}
+.m-tb-dl th, .m-tb-dl td {
+  padding: 20px 30px;
+  text-align: center;
+}
 
 /*# sourceMappingURL=style.css.map */

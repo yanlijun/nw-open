@@ -39,6 +39,9 @@
     margin-left: -$gridSpace;
     margin-right: -$gridSpace;
   }
+  &.ct {
+    padding: $gridSpace * 3;
+  }
 }
 
 /*columns*/

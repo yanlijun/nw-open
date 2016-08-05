@@ -1,0 +1,10 @@
+/*ADK Download*/
+.m-tb-dl { /*download*/
+  margin-bottom: $gridSpace * 3;
+
+  & th,
+  & td {
+    padding: $contextSpace * 2 $gridSpace * 2;
+    text-align: center;
+  }
+}
