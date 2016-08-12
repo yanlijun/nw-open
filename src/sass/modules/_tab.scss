@@ -1,20 +1,20 @@
 .m-tab {
   &-opt {
-    & li {
+    li {
       display: inline-block;
       margin-right: $gridSpace * 2;
     }
-    & a {
+    a {
       font-size: 22px;
       color: $black;
     }
-    & a:hover,
-    & li.sel a {
+    a:hover,
+    li.sel a {
       color: $redLight;
     }
   }
   &-cnt {
-    &>.item { /*container*/
+    .item { /*container*/
       display: none;
       padding: $gridSpace 0;
       &.sel {
@@ -26,11 +26,11 @@
 
         &.main {
           padding: $gridSpace * 4;
-          & img {
+          img {
             max-width: 100%;
           }
         }
-        & .m-fd {
+        .m-fd {
           margin-top: $gridSpace;
           padding: $contextSpace;
           border: 1px solid $grayLight;

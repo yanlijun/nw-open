@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <title>牛丸开放平台</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+<div class="g-doc">
+
+    <header class="g-hd">
+        <div class="g-mn u-mid">
+            <a class="u-mid-ct f-tal" href="index.html"><img class="logo" src="images/logo.png" alt=""></a>
+
+            <nav class="m-nav f-fr">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="document.html">文档</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                    <li><a class="login" href="#">登录</a><i>｜</i><a class="register" href="#">注册</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="g-hd-line"></div>
+    </header>
+
+    <div class="g-bd">
+        <div class="g-mn ct">
+            <h4 class="u-h4 f-tac s-fc-b">注册公会</h4>
+
+            <div class="u-fs">
+                <ul class="u-fs-opt">
+                    <li class="sel"><span class="u-h4">1</span></li>
+                    <li><span class="u-h4">2</span></li>
+                    <li><span class="u-h4">3</span></li>
+                </ul>
+                <div class="u-fs-cnt u-fm">
+                    <div class="item sel">
+                        <div class="forms">
+                            <input class="u-fm-ipt" type="text" placeholder="输入手机号">
+                            <p class="u-tips u-tips-err show">手机号码输入错误</p>
+                            <a class="u-btn u-btn-l u-rc-s f-wf s-bgc-r step-btn" href="#">下一步</a>
+                            <p class="u-tips f-tac"><a href="login-gild.html">已有账号，去登录</a></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="forms">
+                            <input class="u-fm-ipt" type="password" placeholder="输入登录密码">
+                            <input class="u-fm-ipt" type="password" placeholder="再次输入密码">
+                            <p class="u-tips u-tips-err show">密码不一致</p>
+                            <div class="u-fm-grp">
+                                <input class="u-fm-ipt" type="text" placeholder="验证码">
+                                <span class="u-fm-add">
+                                    <a class="u-btn s-fc-r getSmsCode" href="#">获取验证码</a>
+                                </span>
+                            </div>
+                            <p class="u-tips u-tips-err show">验证码错误</p>
+                            <a class="u-btn u-btn-l u-rc-s f-wf s-bgc-r step-btn" href="#">下一步</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <ul class="forms m-fd f-tal">
+                            <li>
+                                <label>*公会logo：</label>
+                                <label class="u-fm-file">
+                                    <input type="file">
+                                    <span class="image s-bg-con"></span>
+                                    <i class="u-ico u-ico-plus"></i>
+                                </label>
+                                <p class="u-tips">建议上传正方形图片，大小500K以内，JPG/PNG格式</p>
+                                <p class="u-tips u-tips-err show">请上传公会logo</p>
+                            </li>
+                            <li>
+                                <label>*公会名称：</label>
+                                <input class="u-fm-ipt" type="text" placeholder="取个响亮的名字">
+                                <p class="u-tips u-tips-err show">该项不可为空</p>
+                            </li>
+                            <li>
+                                <label>牛丸账号：</label>
+                                <input class="u-fm-ipt" type="text" placeholder="1234879846">
+                                <p class="u-tips u-tips-err">该项不可为空</p>
+                            </li>
+                            <li>
+                                <label>*公会简介：</label>
+                                <textarea class="u-fm-ipt" placeholder="说说公会吸引人加入的地方吧~"></textarea>
+                                <p class="u-tips u-tips-err">该项不可为空</p>
+                            </li>
+                            <li>
+                                <label>*邮箱：</label>
+                                <input class="u-fm-ipt" type="text" placeholder="">
+                                <p class="u-tips u-tips-err">该项不可为空</p>
+                            </li>
+                            <li>
+                                <label>*QQ：</label>
+                                <input class="u-fm-ipt" type="text" placeholder="">
+                                <p class="u-tips u-tips-err">该项不可为空</p>
+                            </li>
+                            <li>
+                                <label>*联系地址：</label>
+                                <input class="u-fm-ipt" type="text" placeholder="">
+                                <p class="u-tips u-tips-err">该项不可为空</p>
+                            </li>
+                            <li>
+                                <label>*联系电话：</label>
+                                <input class="u-fm-ipt" type="text" placeholder="">
+                                <p class="u-tips u-tips-err">该项不可为空</p>
+                            </li>
+                            <li>
+                                <label>*公会类型：</label>
+                                <select class="u-fm-ipt">
+                                    <option>企业公会</option>
+                                    <option>牛逼公会</option>
+                                    <option>一般公会</option>
+                                    <option>垃圾公会</option>
+                                </select>
+                                <p class="u-tips u-tips-err">请选择类型</p>
+                            </li>
+                            <li>
+                                <label>*企业名称：</label>
+                                <input class="u-fm-ipt" type="text" placeholder="">
+                                <p class="u-tips u-tips-err">该项不可为空</p>
+                            </li>
+                            <li>
+                                <label>*营业执照：</label>
+                                <label class="u-fm-file">
+                                    <input type="file">
+                                    <span class="image s-bg-con"></span>
+                                    <i class="u-ico u-ico-plus"></i>
+                                </label>
+                                <p class="u-tips">营业执照图片限制格式：JPG、PNG，容量限制：1M之内。</p>
+                                <p class="u-tips u-tips-err show">请上传营业执照</p>
+                            </li>
+                            <li>
+                                <a class="u-btn u-btn-l u-rc-s f-wf s-bgc-r" href="#">注册</a>
+                                <p class="u-tips">*为必填项，不可为空</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="g-ft s-bgc-b">
+        <div class="g-mn u-mid s-fc-w">
+            <p class="u-mid-ct f-tal">Copyright @ 2016 niuwan.net  All Rights Reserved.</p>
+            <nav class="m-nav f-fr">
+                <ul>
+                    <li><a href="contact.html">客服咨询</a></li>
+                    <li><a href="contact.html">商务合作</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+</div>
+
+
+
+
+<div class="m-dlg" id="dialog">
+    <div class="m-dlg-ct u-center crt" id="login">
+        <div class="m-pnl u-rc-l">
+            <div class="m-pnl-hd">
+                <div class="m-dlg-close u-center"><i class="u-ico u-ico-close"></i></div>
+                <h4 class="u-h4 f-tac s-fc-b">登录</h4>
+            </div>
+            <div class="m-pnl-bd">
+                <div class="u-around">
+                    <a class="u-btn u-btn-xl u-rc-s s-bgc-w u-shadow" href="login-gild.html">我是会长</a>
+                    <a class="u-btn u-btn-xl u-rc-s s-bgc-w u-shadow" href="login-cp.html">我是开发者</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="m-dlg-ct u-center" id="register">
+        <div class="m-pnl u-rc-l">
+            <div class="m-pnl-hd">
+                <div class="m-dlg-close u-center"><i class="u-ico u-ico-close"></i></div>
+                <h4 class="u-h4 f-tac s-fc-b">注册</h4>
+            </div>
+            <div class="m-pnl-bd">
+                <div class="u-around">
+                    <a class="u-btn u-btn-xl u-rc-s s-bgc-w u-shadow" href="register-gild.html">我是会长</a>
+                    <a class="u-btn u-btn-xl u-rc-s s-bgc-w u-shadow" href="register-cp.html">我是开发者</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="dist/js/jquery-1.11.3.min.js"></script>
+<script src="src/js/main.js"></script>
+</body>
+</html>

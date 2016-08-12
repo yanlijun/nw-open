@@ -7,6 +7,7 @@
 
   &-gd { /*guide*/
     padding: 3% 0;
+
     .u-corner {
       position: absolute;
       bottom: 0;
@@ -38,12 +39,12 @@
     background-color: $black;
   }
 
-  & .m-lst {
+  .m-lst {
     padding-top: 34px;
     padding-right: $gridSpace;
     padding-left: $gridSpace;
 
-    & .item {
+    .item {
       &-vi {
         @include border-radius(50%);
       }
@@ -56,7 +57,7 @@
     }
 
     &.m-sec-lst1 {
-      & .item {
+      .item {
         @include flex(0 0 28%);
         padding: $contextSpace * 2;
         overflow: visible;
@@ -83,7 +84,7 @@
     }
 
     &.m-sec-lst2 {
-      & .item {
+      .item {
         @include flex(0 0 46%);
         margin: $contextSpace * 2 0;
 

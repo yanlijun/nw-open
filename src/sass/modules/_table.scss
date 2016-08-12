@@ -1,25 +1,25 @@
 .m-tb {
   border-right: 1px solid #cccaca;
   border-bottom: 1px solid #cccaca;
-  & th,
-  & td {
+  th,
+  td {
     padding: 10px;
     border-top: 1px solid #cccaca;
     border-left: 1px solid #cccaca;
   }
-  & .rw-xs { /*row*/
+  .rw-xs { /*row*/
     width: 5%;
   }
-  & .rw-s {
+  .rw-s {
     width: 10%;
   }
-  & .rw-m {
+  .rw-m {
     width: 15%;
   }
-  & .rw-l {
+  .rw-l {
     width: 20%;
   }
-  & .rw-xl {
+  .rw-xl {
     width: 25%;
   }
 }

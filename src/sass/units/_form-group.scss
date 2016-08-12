@@ -1,60 +1,107 @@
-.u-fm-el,
-.u-fm-grp {
-  margin-bottom: $gridSpace;
-  border: 1px solid #9fa0a0;
-  color: #1e1e1e;
-}
-.u-fm-el:not([class*=u-rc]),
-.u-fm-grp:not([class*=u-rc]) {
-  border-radius: 2px;
-}
-.u-fm-el,
-.u-fm-grp-el,
-.u-fm-grp-add {
-  padding: 8px;
-}
-.u-fm-el {
-  display: block;
-}
-.u-fm-grp {
-  display: table;
-  overflow: hidden;
-  background-color: #fff;
-}
-.u-fm-gap {
-  width: 15px;
-}
+.u-fm {
+  &-file,
+  &-ipt, /*other input*/
+  &-grp {
+    margin-bottom: $gridSpace;
 
-.u-fm-grp-el,   /*for input text*/
-.u-fm-grp-add,  /*for button or text*/
-.u-fm-grp-ico   /*for icon*/
-{
-  display: table-cell;
-}
-.u-fm-grp-el {
-  width: 100%;
-  border: none;
-  background: none;
-}
-.u-fm-grp-add,
-.u-fm-grp-ico {
-  width: 1%;
-  white-space: nowrap;
-}
-.u-fm-grp-add .u-btn {
-  padding: 10px 8px;
-  margin: -10px -8px;
-  vertical-align: initial;
-}
-.u-fm-grp-ico .u-ico {
-  width: 50px;
-  padding: 4px 0;
-}
-.u-fm-grp-add:first-child,
-.u-fm-grp-ico:first-child .u-ico {
-  border-right: 1px solid #9fa0a0;
-}
-.u-fm-grp-add:last-child,
-.u-fm-grp-ico:last-child .u-ico {
-  border-left: 1px solid #9fa0a0;
+    & + .u-tips {
+      margin-top: -$contextSpace;
+
+      & + .u-tips {
+        margin-top: -$contextSpace;
+      }
+    }
+  }
+
+  &-ipt:not([class*=u-rc]),
+  &-grp:not([class*=u-rc]) {
+    border-radius: 2px;
+  }
+
+  &-file {
+    &,
+    .image.show {
+      display: inline-block;
+    }
+    input,
+    .image {
+      display: none;
+    }
+    .image,
+    .u-ico {
+      width: 100px;
+      height: 100px;
+    }
+    .image {
+      margin-right: $contextSpace;
+      vertical-align: middle;
+    }
+    .u-ico {
+      border: 1px solid $grayInputBorder;
+      background-color: $grayUltraLight;
+      background-size: 40% 40%;
+      cursor: pointer;
+    }
+  }
+  &-ipt {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    color: #1e1e1e;
+  }
+  &-grp {
+    display: table;
+    overflow: hidden;
+    border: 1px solid $grayInputBorder;
+    background-color: $white;
+
+    input,
+    button,
+    select,
+    textarea {
+      border: none;
+    }
+
+    .u-fm-ipt,
+    .u-fm-add { /*for button, icon or text*/
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .u-fm-ipt {
+      margin-bottom: 0;
+    }
+    .u-fm-add {
+      width: 1%;
+      padding-right: 8px;
+      padding-left: 8px;
+      white-space: nowrap;
+
+      .u-ico,
+      .u-btn {
+        vertical-align: initial;
+      }
+      .u-btn {
+        min-width: 80px;
+        margin: -8px;
+        padding: 8px;
+      }
+      &:first-child {
+        border-right: 1px solid $grayInputBorder;
+      }
+      &:last-child {
+        border-left: 1px solid $grayInputBorder;
+      }
+    }
+  }
+
+  .m-fd {
+    li {
+      padding-top: 0;
+      padding-bottom: 0;
+
+      label {
+        line-height: $baseFontSize * $baseLineHeight + 16px + 2px;
+      }
+    }
+  }
 }

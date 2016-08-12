@@ -40,6 +40,7 @@
     margin-bottom: 6px;
   }
 }
+
 /********* Radius *********/
 .u-rc-s,
 .u-rc-m,
@@ -55,6 +56,7 @@
 .u-rc-l {
   @include border-radius(20px);
 }
+
 /********* Middle *********/
 .u-mid {
   display: table;
@@ -65,12 +67,14 @@
   text-align: center;
   vertical-align: middle;
 }
+
 /********* Center *********/
 .u-center {
   @extend %display-flex;
   @include justify-content(center);
   @include align-items(center);
 }
+
 /********* Around *********/
 .u-around {
   @extend %display-flex;
@@ -80,16 +84,19 @@
   @extend %display-flex;
   @include justify-content(space-between);
 }
+
 /********* Shadow *********/
 .u-shadow {
   @include box-shadow(0 2px 3px rgba(0,0,0,.3));
 }
+
 /********* Corner *********/
 .u-corner {
   border-width: 0 $cornerWidth $cornerWidth;
   border-style: solid;
   border-color: transparent;
 }
+
 /********* Sub *********/
 .u-super,.u-sub {
   padding: 2px 4px;
@@ -100,6 +107,7 @@
 .u-sub {
   vertical-align: text-bottom;
 }
+
 /********* Platoon *********/
 .u-plat {
   padding: 15px;
